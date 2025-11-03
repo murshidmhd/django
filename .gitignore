@@ -1,0 +1,35 @@
+# === IGNORE EVERYTHING BY DEFAULT ===
+*
+
+# === EXCEPTIONS: ONLY KEEP THESE ===
+!myapp/
+!myapp/**
+!manage.py
+!.gitignore
+
+# === OPTIONAL: Keep settings (but hide secrets later) ===
+!mysite/
+!mysite/**
+# But ignore local settings
+mysite/settings_local.py
+mysite/__pycache__/
+mysite/*/__pycache__/
+
+# === COMMON DJANGO IGNORES ===
+venv/
+env/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+*.pid
+*.env
+.DS_Store
+*.swp
+*.swo
+
+# === MEDIA / STATIC (usually not committed) ===
+media/
+staticfiles/
